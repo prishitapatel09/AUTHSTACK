@@ -1,8 +1,8 @@
 #  Authify – Full-Stack MERN Authentication App
 
-**Authify** is a secure, full-stack authentication template built with the **MERN stack**. It offers a robust and modern foundation for user authentication, profile management, and protected routing in full-stack applications.
+**Authify** is a secure, full-stack authentication template built with the MERN stack. It offers a robust and modern foundation for user authentication, profile management, and protected routing in full-stack applications.
 
-This project demonstrates secure login systems using **JWT**, **Redux Toolkit**, **Firebase Storage**, and cookie-based session management.
+This project demonstrates secure login systems using JWT, Redux Toolkit, Firebase Storage, and cookie-based session management.
 
 
 
@@ -27,41 +27,37 @@ This project demonstrates secure login systems using **JWT**, **Redux Toolkit**,
 -  Responsive and clean UI using Tailwind CSS
 
 
-##  How it works?
-User Registration & Login
-Users can sign up with their email and password.
+## How It Works
 
-Upon successful login, the backend issues a JWT token and stores it in an HTTP-only cookie to protect against XSS attacks.
+### User Registration & Login
+- Users can sign up with their email and password.
+- Upon successful login, the backend issues a JWT token and stores it in an HTTP-only cookie to protect against XSS attacks.
 
-Protected Routes
-Certain pages like the Profile Page are protected.
+### Protected Routes
+- Pages like the Profile Page are protected.
+- If a user tries to access them without being authenticated (i.e., without a valid token), they are redirected to the Login page.
 
-If a user tries to access them without being authenticated (i.e., without a valid token), they are redirected to the Login page.
-
-Profile Management
+### Profile Management
 Logged-in users can:
+- Update their username, email, and password.
+- Upload a profile picture (stored in Firebase Storage).
+- The new profile image URL is saved in the backend and reflected across sessions.
 
-Update their username, email, and password
+### Authentication State
+- The frontend uses Redux Toolkit to manage the global user state.
+- Redux ensures the app knows the user is authenticated, even after refreshing the page.
 
-Upload a profile picture (stored in Firebase Storage)
+### Session Persistence
+- Since the token is stored in an HTTP-only cookie, users stay logged in across page reloads.
+- The backend validates the cookie on all protected endpoints.
 
-The new profile image URL is saved in the backend and reflected across sessions.
+### Sign Out
+- Clicking Sign Out clears the cookie on the backend, logging the user out securely.
 
-Authentication State
-The frontend uses Redux Toolkit to manage the global user state.
-
-Redux ensures that once a user logs in, the app knows the user is authenticated, even when the page reloads.
-
-Session Persistence
-Since the token is stored in an HTTP-only cookie, the user stays logged in across page reloads.
-
-The backend validates the cookie on protected endpoints.
-
-Sign Out
-Clicking “Sign Out” clears the cookie on the backend, logging the user out securely.
-
-Delete Account
-Users can delete their account, which removes their record from MongoDB and logs them out immediately.
+### Delete Account
+- Users can delete their account, which:
+  - Removes their record from MongoDB.
+  - Logs them out immediately.
 
 
 
