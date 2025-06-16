@@ -4,7 +4,7 @@
 
 This project demonstrates secure login systems using **JWT**, **Redux Toolkit**, **Firebase Storage**, and cookie-based session management.
 
----
+
 
 ##  Tech Stack
 
@@ -13,18 +13,18 @@ This project demonstrates secure login systems using **JWT**, **Redux Toolkit**,
 - **Authentication**: JWT (JSON Web Token), HTTP-only Cookies
 - **Image Upload**: Firebase Storage
 
----
+
 
 ##  Features
 
-- ✅ Email and password authentication
-- ✅ JWT-based session management (with HTTP-only cookies)
-- ✅ Redux Toolkit for global state handling
-- ✅ Protected profile route (client + server side)
-- ✅ Profile updates: username, email, password
-- ✅ Profile image upload using Firebase Storage (max size 2MB)
-- ✅ Account deletion functionality
-- ✅ Responsive and clean UI using Tailwind CSS
+-  Email and password authentication
+-  JWT-based session management (with HTTP-only cookies)
+-  Redux Toolkit for global state handling
+-  Protected profile route (client + server side)
+-  Profile updates: username, email, password
+-  Profile image upload using Firebase Storage (max size 2MB)
+-  Account deletion functionality
+-  Responsive and clean UI using Tailwind CSS
 
----
+
 
