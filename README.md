@@ -35,7 +35,7 @@ This project demonstrates secure login systems using JWT, Redux Toolkit, Firebas
 
 ### Protected Routes
 - Pages like the Profile Page are protected.
-- If a user tries to access them without being authenticated (i.e., without a valid token), they are redirected to the Login page.
+- If a user tries to access them without being authenticated (without a valid token), they are redirected to the Login page.
 
 ### Profile Management
 Logged-in users can:
